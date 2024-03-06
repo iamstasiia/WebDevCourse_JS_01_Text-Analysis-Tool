@@ -1,0 +1,16 @@
+{
+  "name": "webdevcourse_js_01_text-analysis-tool",
+  "version": "1.0.0",
+  "description": "##### Prüfungsaufgabe Entwickle ein Textanalyse-Tool in JavaScript, das verschiedene statistische Informationen über einen vom Benutzer eingegebenen Text liefert. Das Tool sollte folgende Funktionen bieten:",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
