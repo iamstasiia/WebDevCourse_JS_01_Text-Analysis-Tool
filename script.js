@@ -4,7 +4,8 @@ import {
     pureText,
     quantityCounter,
     differentWordCounter,
-    longestWord} from './functions.js';
+    longestWord,
+    wordCounter} from './functions.js';
 
 
 function textanalyseTool() {
@@ -22,6 +23,9 @@ function textanalyseTool() {
     
         console.log('The longest word in the text is:',
         longestWord(pureTextArray));
+
+        console.log('The following words are used:',
+        wordCounter(pureTextArray));
 
         let userInput = question('\nDo you want to enter another text? (y/n): ');
             if (userInput.toLowerCase() !== 'y') {

@@ -18,6 +18,7 @@ export function quantityCounter(array) {
 
 export function differentWordCounter(array) {
     let differentWords = [];
+    
     for (let word of array) {
         word = word.toLowerCase();
         if (!(differentWords.includes(word))) {
@@ -29,10 +30,25 @@ export function differentWordCounter(array) {
 
 export function longestWord(array) {
     let longestWord = '';
+
     for (let word of array) {
         if (word.length > longestWord.length) {
             longestWord = word;
         }
     }
     return longestWord;
+}
+
+export function wordCounter(array) {
+    let wordsArray = {};
+
+    for (let word of array) {
+        word = word.toLowerCase();
+        if (wordsArray[word]) {
+            wordsArray[word]++;
+        } else {
+            wordsArray[word] = 1;
+        }
+    }
+    return wordsArray;
 }
